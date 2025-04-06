@@ -5,7 +5,7 @@ import Input from "./components/Input";
 import LocationTime from "./components/LocationTime";
 import TempResult from "./components/TempResult";
 import getFormattedWeatherData from "./services/weatherServices";
-import { Notfound } from "./components/notfound";
+import { Notfound } from "./components/Notfound";
 
 const App = () => {
   const [query, setQuery] = useState({ q: "surabaya" });
