@@ -24,7 +24,7 @@ const ButtonTop= ({setQuery}) =>{
   return (
     <div className="items-center flex justify-around my-3">
       {listkota.map((kota) => (
-        <button key={kota.id} className="text-lg font-medium hover:bg-gray-700/20 px-3 py-2 rounded-md transition ease-in"
+        <button key={kota.id} className="text-xs font-medium lg:text-lg hover:bg-gray-700/20 px-3 py-2 rounded-md transition ease-in"
         onClick={() => setQuery({q:kota.name})}
         >
           {kota.name}

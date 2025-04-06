@@ -29,17 +29,19 @@ const App = () => {
 
   return (
     <div
-      className={`mx-auto max-w-screen-lg mt-4 py-5 px-32 bg-gradient-to-br shadow-xl shadow-gray-400 from-blue-500 to-sky-700`}
+      className={` min-h-screen bg-gradient-to-br shadow-xl shadow-gray-400 from-blue-500 to-sky-700 lg:px-32 lg:max-w-screen-lg lg:mx-auto lg:mt-4 py-5`}
     >
       <ButtonTop setQuery={setQuery}></ButtonTop>
       <Input setQuery={setQuery} setUnits={setUnits}></Input>
+
+    
 
       {weather != null ? (
         <>
           <LocationTime weather={weather}></LocationTime>
           <TempResult weather={weather} units={units}></TempResult>
           <Forecast title="3 hour forecast" data={weather.hourly}></Forecast>
-          <Forecast title="5 days forecast" data={weather.daily}></Forecast>
+         <Forecast title="5 days forecast" data={weather.daily}></Forecast> 
         </>
       ) : (
         <Notfound></Notfound>
