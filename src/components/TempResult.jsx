@@ -81,7 +81,7 @@ const TempResult = ({
             </p>
           </div>
         </div>
-        <div className="flex flex-row  items-start">
+        <div className="flex flex-row  justify-center items-center">
           {tempDetails.map(({ Icon, title, value }) => (
             <div className="flex  items-center font-light text-xs justify-center mx-2">
               <Icon size={18} className="mr-1" />
